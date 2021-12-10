@@ -87,20 +87,28 @@ struct dict* forwardMatching(struct dict *dic,char *content){
 	dic_list = (struct dict*)malloc(sizeof(struct dict));
 	dic_list->next = NULL;
 	while(*content != '\0'){
-		memcpy(longest_word,content,2);
-		longest_word[2]='\0'; //开始的字典
+		//拷贝5个字符
+		//printf("字符长度%d\t",strlen(content));
+		if(strlen(content) >= 10){
+			memcpy(longest_word,content,10); 
+			cp_len=10;
+		}else{
+			memcpy(longest_word,content,strlen(content)); 
+			cp_len=strlen(content);
+		}
+		longest_word[cp_len]='\0'; //开始的字符
 		//字典查找
-		cp_len=2;
-		for(i = 2;i < strlen(content);i+=2){
-			memcpy(temp_word,content,cp_len+2);
-			temp_word[cp_len+2]='\0';
-			if(strlen(temp_word) > 12){  //最多5个字符
+		//最长字典为5个字符
+		for(i = 0;i < strlen(longest_word);i+=2){
+			memcpy(temp_word,content,cp_len);
+			temp_word[cp_len]='\0';
+			//printf("最长字符：%s\t字符：%s\n",longest_word,temp_word);
+			if(getValue(dic,temp_word) == 1){
+				//printf("找到分词结果：%s",temp_word);
+				strcpy(longest_word,temp_word);
 				break;
 			}
-			if(getValue(dic,temp_word) == 1){
-				strcpy(longest_word,temp_word);
-			}
-			cp_len+=2;
+			cp_len-=2;
 		}
 		//将查找到的串添加到链表中
 		new_node = (struct dict*)malloc(sizeof(struct dict));
@@ -208,13 +216,18 @@ struct dict* backwardMatch(struct dict *dic,char *content){
 	//把整个文本分割
 	while(i > 0){
 		//从文本的后面截取5个中文字符
+		//如果字符不够长截取剩余字符
+		if(i > 5){
+			longest_word = get_last_surplus_str(surplus_str,5); 
+			match_len = 5;
+		}else{
+			longest_word = get_last_surplus_str(surplus_str,i); 
+			match_len = i;
+		}
 		//遍历如果匹配不成功则减少一个汉字
-	/*	match_len = 5;
-		l = i-(i-match_len);
-		printf("%d\n",l);*/
-		longest_word = get_last_surplus_str(surplus_str,i); 
-		/*while(match_len > 0){*/
-			for(j = i;j >= 0; j--){
+		//printf("最长字符串：%s\t",longest_word);
+			for(j = match_len;j >= 0; j--){
+				//printf("%d\n",j);
 				temp_str = get_last_surplus_str(surplus_str,j);
 				//printf("%s\n",temp_str);
 				if(getValue(dic,temp_str) == 1){
@@ -234,11 +247,7 @@ struct dict* backwardMatch(struct dict *dic,char *content){
 			new_node->next = result_list->next;
 			result_list->next = new_node;
 			match_len -= strlen(longest_word) >> 1;
-		/*	if(strlen(longest_word) < 4){
-				break;
-			}
-		}*/
-		i -= strlen(longest_word) >> 1;
+			i -= strlen(longest_word) >> 1;
 	}
 	return result_list;
 }

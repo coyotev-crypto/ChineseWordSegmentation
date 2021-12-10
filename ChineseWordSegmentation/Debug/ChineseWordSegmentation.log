@@ -1,15 +1,46 @@
-﻿生成启动时间为 2021/12/10 10:37:52。
+﻿生成启动时间为 2021/12/10 15:22:14。
      1>项目“D:\Project\C++\ChineseWordSegmentation\ChineseWordSegmentation\ChineseWordSegmentation.vcxproj”在节点 2 上(build 个目标)。
      1>InitializeBuildStatus:
          正在创建“Debug\ChineseWordSegmentation.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
        ClCompile:
-         所有输出均为最新。
+         E:\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt participle.c
+         participle.c
+     1>d:\project\c++\chinesewordsegmentation\chinesewordsegmentation\participle.c(37): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 e:\microsoft visual studio 10.0\vc\include\stdio.h(234) : 参见“fopen”的声明
+     1>d:\project\c++\chinesewordsegmentation\chinesewordsegmentation\participle.c(62): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 e:\microsoft visual studio 10.0\vc\include\string.h(188) : 参见“strncpy”的声明
+     1>d:\project\c++\chinesewordsegmentation\chinesewordsegmentation\participle.c(102): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\project\c++\chinesewordsegmentation\chinesewordsegmentation\participle.c(108): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 e:\microsoft visual studio 10.0\vc\include\string.h(105) : 参见“strcpy”的声明
+     1>d:\project\c++\chinesewordsegmentation\chinesewordsegmentation\participle.c(116): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 e:\microsoft visual studio 10.0\vc\include\string.h(105) : 参见“strcpy”的声明
+     1>d:\project\c++\chinesewordsegmentation\chinesewordsegmentation\participle.c(155): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 e:\microsoft visual studio 10.0\vc\include\stdio.h(304) : 参见“scanf”的声明
+     1>d:\project\c++\chinesewordsegmentation\chinesewordsegmentation\participle.c(158): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 e:\microsoft visual studio 10.0\vc\include\stdio.h(304) : 参见“scanf”的声明
+     1>d:\project\c++\chinesewordsegmentation\chinesewordsegmentation\participle.c(160): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 e:\microsoft visual studio 10.0\vc\include\stdio.h(234) : 参见“fopen”的声明
+     1>d:\project\c++\chinesewordsegmentation\chinesewordsegmentation\participle.c(147): warning C4101: “word”: 未引用的局部变量
+     1>d:\project\c++\chinesewordsegmentation\chinesewordsegmentation\participle.c(214): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 e:\microsoft visual studio 10.0\vc\include\string.h(105) : 参见“strcpy”的声明
+     1>d:\project\c++\chinesewordsegmentation\chinesewordsegmentation\participle.c(234): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 e:\microsoft visual studio 10.0\vc\include\string.h(105) : 参见“strcpy”的声明
+     1>d:\project\c++\chinesewordsegmentation\chinesewordsegmentation\participle.c(245): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 e:\microsoft visual studio 10.0\vc\include\string.h(105) : 参见“strcpy”的声明
+     1>d:\project\c++\chinesewordsegmentation\chinesewordsegmentation\participle.c(204): warning C4101: “l”: 未引用的局部变量
        ManifestResourceCompile:
          所有输出均为最新。
        Link:
-         所有输出均为最新。
+         E:\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Project\C++\ChineseWordSegmentation\Debug\ChineseWordSegmentation.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\ChineseWordSegmentation.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Project\C++\ChineseWordSegmentation\Debug\ChineseWordSegmentation.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Project\C++\ChineseWordSegmentation\Debug\ChineseWordSegmentation.lib" /MACHINE:X86 Debug\ChineseWordSegmentation.exe.embed.manifest.res
+         Debug\linked_list.obj
+         Debug\main.obj
+         Debug\participle.obj
        Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\ChineseWordSegmentation.exe.embed.manifest" /manifest Debug\ChineseWordSegmentation.exe.intermediate.manifest
          所有输出均为最新。
+       LinkEmbedManifest:
+         所有输出均为最新。
+         ChineseWordSegmentation.vcxproj -> D:\Project\C++\ChineseWordSegmentation\Debug\ChineseWordSegmentation.exe
        FinalizeBuildStatus:
          正在删除文件“Debug\ChineseWordSegmentation.unsuccessfulbuild”。
          正在对“Debug\ChineseWordSegmentation.lastbuildstate”执行 Touch 任务。
@@ -17,4 +48,4 @@
 
 生成成功。
 
-已用时间 00:00:00.03
+已用时间 00:00:00.36
