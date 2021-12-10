@@ -47,7 +47,7 @@ int load_dic(struct dict *dic,char *dic_path){
 	}	
 	fclose(fp);
 	end_time = clock();
-	printf("字典加载成功%d毫秒\n\n",end_time);
+	printf("字典加载成功%d毫秒\n\n",end_time-start_time);
 	return 0;
 }
 
@@ -162,6 +162,7 @@ int participle(struct dict *dic,int parent_cmd){
 			printf("文件打开失败！\n");
 			return 1;
 		}
+		start_time = clock();
 		while(fgets(line,200,fp) != NULL){
 			//一行行分词
 			//去掉换行
@@ -176,21 +177,21 @@ int participle(struct dict *dic,int parent_cmd){
 		}	
 		fclose(fp);
 		end_time = clock();
-		printf("分词成功%d毫秒\n\n",end_time);
+		printf("分词成功%d毫秒\n\n",end_time-start_time);
 		return 0;
 	}else if(cmd == 2){
 		start_time = clock();
 		result_data = participle_matching(dic,participle_paht,parent_cmd);
+		end_time = clock();
 	}else{
 		printf("\n参数错误！\n");
 		return 1;
 	}
-	end_time = clock();
 	if(get_size(result_data) == 0){
-			printf("分词失败%d毫秒\n\n",end_time);
+			printf("分词失败%d毫秒\n\n",end_time-start_time);
 	}else{
 			printf_result(result_data);
-			printf("分词成功%d毫秒\n\n",end_time);
+			printf("分词成功%d毫秒\n\n",end_time-start_time);
 	}
 	return 0;
 }

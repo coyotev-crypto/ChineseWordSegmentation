@@ -1,4 +1,4 @@
-﻿生成启动时间为 2021/12/10 15:22:14。
+﻿生成启动时间为 2021/12/10 15:48:25。
      1>项目“D:\Project\C++\ChineseWordSegmentation\ChineseWordSegmentation\ChineseWordSegmentation.vcxproj”在节点 2 上(build 个目标)。
      1>InitializeBuildStatus:
          正在创建“Debug\ChineseWordSegmentation.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
@@ -21,13 +21,13 @@
      1>d:\project\c++\chinesewordsegmentation\chinesewordsegmentation\participle.c(160): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  e:\microsoft visual studio 10.0\vc\include\stdio.h(234) : 参见“fopen”的声明
      1>d:\project\c++\chinesewordsegmentation\chinesewordsegmentation\participle.c(147): warning C4101: “word”: 未引用的局部变量
-     1>d:\project\c++\chinesewordsegmentation\chinesewordsegmentation\participle.c(214): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>d:\project\c++\chinesewordsegmentation\chinesewordsegmentation\participle.c(215): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  e:\microsoft visual studio 10.0\vc\include\string.h(105) : 参见“strcpy”的声明
-     1>d:\project\c++\chinesewordsegmentation\chinesewordsegmentation\participle.c(234): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>d:\project\c++\chinesewordsegmentation\chinesewordsegmentation\participle.c(235): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  e:\microsoft visual studio 10.0\vc\include\string.h(105) : 参见“strcpy”的声明
-     1>d:\project\c++\chinesewordsegmentation\chinesewordsegmentation\participle.c(245): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>d:\project\c++\chinesewordsegmentation\chinesewordsegmentation\participle.c(246): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  e:\microsoft visual studio 10.0\vc\include\string.h(105) : 参见“strcpy”的声明
-     1>d:\project\c++\chinesewordsegmentation\chinesewordsegmentation\participle.c(204): warning C4101: “l”: 未引用的局部变量
+     1>d:\project\c++\chinesewordsegmentation\chinesewordsegmentation\participle.c(205): warning C4101: “l”: 未引用的局部变量
        ManifestResourceCompile:
          所有输出均为最新。
        Link:
@@ -48,4 +48,4 @@
 
 生成成功。
 
-已用时间 00:00:00.36
+已用时间 00:00:00.33
